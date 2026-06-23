@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D0D1A">
+
+    <!-- Game canvas (fills most of the screen) -->
+    <FrameLayout
+        android:id="@+id/game_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Control buttons row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#0A0A18"
+        android:paddingTop="6dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="center_vertical">
+
+        <!-- Left -->
+        <Button
+            android:id="@+id/btn_left"
+            style="@style/ControlButton"
+            android:layout_weight="1"
+            android:text="◀"
+            android:textSize="22sp"/>
+
+        <!-- Down (soft drop) -->
+        <Button
+            android:id="@+id/btn_down"
+            style="@style/ControlButton"
+            android:layout_weight="1"
+            android:text="▼"
+            android:textSize="22sp"/>
+
+        <!-- Rotate -->
+        <Button
+            android:id="@+id/btn_rotate"
+            style="@style/ControlButton"
+            android:layout_weight="1"
+            android:text="↺"
+            android:textSize="22sp"/>
+
+        <!-- Right -->
+        <Button
+            android:id="@+id/btn_right"
+            style="@style/ControlButton"
+            android:layout_weight="1"
+            android:text="▶"
+            android:textSize="22sp"/>
+
+        <!-- Hard drop -->
+        <Button
+            android:id="@+id/btn_drop"
+            style="@style/ControlButton"
+            android:layout_weight="1"
+            android:backgroundTint="#AA3333FF"
+            android:text="⚡"
+            android:textSize="22sp"/>
+
+        <!-- Pause -->
+        <Button
+            android:id="@+id/btn_pause"
+            style="@style/ControlButton"
+            android:layout_weight="1"
+            android:backgroundTint="#AA336633"
+            android:text="⏸"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
